@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Список справ</h1>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Нова задача..." autocomplete="off" required>
+      <button type="submit">Додати</button>
+    </form>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">Усі</button>
+      <button class="filter" data-filter="active">Активні</button>
+      <button class="filter" data-filter="done">Виконані</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <div class="footer">
+      <span id="counter">0 задач</span>
+      <button id="clear-done">Видалити виконані</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
